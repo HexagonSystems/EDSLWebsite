@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="includes/ico/favicon.png">
+
+  <title>EDSL</title>
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="includes/css/bootstrap.edsl.css" />
+  <link href="includes/css/edsltheme.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="includes/js/html5shiv.js"></script>
+      <script src="includes/js/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+  <body>
+    <!--HEADER -->
+        <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="pull-left navbar-btn btn-sidebar visible-xs" data-toggle="offcanvas" data-target="offcanvas">
+            <span class="sr-only">Tasks</span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".topmenu">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">EDSL</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <nav class="collapse navbar-collapse topmenu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Division 1 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Switch Division</li>
+                <li><a href="#">Division 1</a></li>
+                <li><a href="#">Division 2</a></li>
+                <li><a href="#">Division 3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Ladder</a></li>
+            <li><a href="#">Fixtures & Matches</a></li>
+            <li role="presentation" class="divider"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clubs <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Clubs</a></li>
+                <li role="presentation" class="divider"></li>
+                <li><a href="#">Hawthorn</a></li>
+                <li><a href="#">Kew</a></li>
+                <li><a href="#">Toorak</a></li>
+                <li><a href="#">Glenhuntly</a></li>
+                <li><a href="#">Caulfield</a></li>
+              </ul>
+            </li>
+          </ul>
+              <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Login</a></li>
+    </ul>
+              <form class="navbar-form navbar-right hidden-sm" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+    </form>
+
+        </nav><!-- /.navbar-collapse -->
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- CONTAINER -->
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <!-- START SIDEBAR -->
+        <div class="col-xs-6 col-sm-3 col-md-3 colmun-offcanvas" role="navigation">
+          <div id="sidebar" class="sidebar-offcanvas sidebar-affix"><!-- this wraps all the stuff on the side
+            make sure you put side bar stuff between HERE -->
+            <div class="well sidebar-nav">
+              <ul class="nav">
+                <li>Recent News</li>
+                <li class="active"><a href="#">We Made A Site!</a></li>
+                <li><a href="#">Put side menu stuff here!</a></li>
+                <li><a href="#">You can also put text etc.</a></li>
+              </ul>
+              <p>Like this! Cool story hey bro?</p>
+            </div><!--/.well -->
+            <div class="panel panel-primary">
+              <div class="panel-heading">Holy snapping ducks!</div>
+              <div class="panel-body">
+                A panel with stuff in it!<br />
+                Maybe I'll put in a label like a boss! <span class="label label-success">Success!</span>
+              </div>
+            </div>
+          </div>
+          <!-- AND HERE or you are going to have a bad time -->
+        </div><!--/span-->
+        <!-- END SIDEBAR -->
+
+        <!-- END MAIN -->
+        <div class="col-xs-12 col-sm-9">
+          <div class="row">
+            <div class="col-sm-12 col-lg-12">
+              <h2>This site</h2>
+              <p>Stephen has written a theme for the EDSL site which is installed in this template.</p>
+              <p>Use it as a starting point for the pages you have to design!</p>
+              <p>The link below takes you to the Bootstrap docs</p>
+              <p><a class="btn btn-primary" href="http://getbootstrap.com/css/" target="_blank">Check Out Bootstrap! &raquo;</a></p>
+            </div><!--/span-->
+            <div class="col-sm-12 col-lg-12">
+              <h2>Adding CSS</h2> <span class="label label-warning">DANGER</span>
+              <p>If you need to add CSS code to the site add it to the hexagontheme.css file.</p>
+              <p>You <strong>must</strong> bracket your changes in the CSS file with comments like below:-</p>
+              <pre>/* Stephen's CSS Changes START */
+.btn-special {
+  color: #563d7c;
+  background-color: #fff;
+  border-color: #e5e5e5;
+}
+/* Stephen's CSS Changes END */</pre>
+            </div><!--/span-->
+            <div class="col-sm-12 col-lg-12">
+              <h2>Adding JS</h2> <span class="label label-warning">DANGER</span>
+              <p>If you need to add JS code to the site add it to a custom js in <pre>includes\js</pre> file.</p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+        <!-- END MAIN -->
+
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.container-->
+    <!-- END CONTAINER -->
+
+  <!-- JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+    <!--[if lte IE 8]>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+  <![endif]-->
+
+  <!--[if gt IE 8]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-2.0.0.min.js"><\/script>')</script>
+  <!--<![endif]-->
+  <script src="includes/js/bootstrap.min.js"></script>
+  <script src="includes/js/offcanvas.js"></script>
+</body>
+</html>
