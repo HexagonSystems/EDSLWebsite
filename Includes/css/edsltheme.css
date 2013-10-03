@@ -13,6 +13,22 @@
  */
 
 /*
+  * Stephen Changes Start
+ */
+  .sidebar-panel .panel-heading h4{
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-panel .panel-heading h4 a{
+    color: #fff;
+    text-shadow: none;
+  }
+
+/*
+  * Stephen Changes End
+ */
+
+/*
  * Scaffolding
  *
  * Update the basics of our documents to prep for docs content.
