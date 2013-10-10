@@ -36,9 +36,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Clubs <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">All Clubs</a></li>
+								<li><a href="clubList.php">All Clubs</a></li>
 								<li role="presentation" class="divider"></li>
-								<li><a href="#">Hawthorn</a></li>
+								<li><a href="club.php">Hawthorn</a></li>
 								<li><a href="#">Kew</a></li>
 								<li><a href="#">Toorak</a></li>
 								<li><a href="#">Glenhuntly</a></li>
