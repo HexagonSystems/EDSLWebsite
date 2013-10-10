@@ -141,6 +141,19 @@ body {
   border-right: 1px solid #563d7c;
 }
 
+/*Tara changes*/
+/*Cursor type in table*/
+.pointer{
+	cursor: pointer;
+}
+
+label.error{
+	color:red;
+	font-weight:normal;
+}
+
+/*End tara changes*/
+
 @media screen and (max-width: 991px) {
 
     /* Widen the fixed sidebar */
@@ -178,8 +191,8 @@ body {
     position: fixed; /* Undo the static from mobile first approach */
     top: 50px;
   }
-
 }
+
 @media screen and (min-width: 1200px) {
   /* Widen the fixed sidebar again */
   .sidebar-affix.affix-bottom,
