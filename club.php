@@ -145,7 +145,7 @@
 									<td><a href="#">Lions</a></td>
 									<td>
 										<ul class="list-unstyled">
-											<li><a href="#"><b>02</b> Seb Vettel</a></li>
+											<li><a href="memberView.php"><b>02</b> Seb Vettel</a></li>
 											<li><a href="#"><b>08</b> Frank Alonso</a></li>
 											<li><a href="#"><b>85</b> Kim Richards</a></li>
 											<li><a href="#"><b>12</b> Nick Hulkenburg</a></li>
