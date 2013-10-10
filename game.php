@@ -21,66 +21,10 @@
     </head>
 
   <body>
-    <!--HEADER -->
-    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="pull-left navbar-btn btn-sidebar visible-xs" data-toggle="offcanvas" data-target="offcanvas">
-            <span class="sr-only">Tasks</span>
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </button>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".topmenu">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">EDSL</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="collapse navbar-collapse topmenu">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Division 1 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Switch Division</li>
-                <li><a href="#">Division 1</a></li>
-                <li><a href="#">Division 2</a></li>
-                <li><a href="#">Division 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Ladder</a></li>
-            <li><a href="#">Fixtures & Matches</a></li>
-            <li role="presentation" class="divider"></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clubs <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">All Clubs</a></li>
-                <li role="presentation" class="divider"></li>
-                <li><a href="#">Hawthorn</a></li>
-                <li><a href="#">Kew</a></li>
-                <li><a href="#">Toorak</a></li>
-                <li><a href="#">Glenhuntly</a></li>
-                <li><a href="#">Caulfield</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Login</a></li>
-          </ul>
-          <form class="navbar-form navbar-right hidden-sm" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-          </form>
-
-        </nav><!-- /.navbar-collapse -->
-      </div>
-    </header>
-    <!-- END HEADER -->
+    <!-- HEADER -->
+	<?php include "includes/nav.php"; ?>
+	<!-- END HEADER -->
+	
     <!-- CONTAINER -->
     <div class="container">
 
@@ -136,9 +80,46 @@
             <div class="col-sm-6">
               <p><strong>Venue:</strong> Hawthorn Soccer Field <button class="btn btn-info btn-xs"><span class="glyphicon glyphicon-map-marker"></span><small>MAP</small></button></p>
             </div><!--/span-->
-             <button type="button" class="btn btn-warning" data-toggle="modal" href="#enterResult">Enter Match Report</button>
           </div><!--/row-->
-          <hr />
+          <div class="row">
+          <div class="panel panel-primary">
+          <!-- Default panel contents -->
+          <div class="panel-heading"><h4 class="panel-title">Match Results</h4></div>
+          <div class="panel-body">
+            <p>Balls were kicked, Goals were scored. Someone got red carded</p>
+          </div>
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Hawthorn FC</th>
+                  <th>Kew FC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1st</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2nd</td>
+                  <td>2</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Final</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>  
+
+        </div>
+        </div><!--/row-->
           <div class="row">
             <h2>Players</h2 >
             <div class="col-xs-6">
@@ -298,60 +279,6 @@
 
     </div><!--/.container-->
     <!-- END CONTAINER -->
-  <!-- Modal -->
-  <div class="modal fade" id="enterResult" tabindex="-1" role="dialog" aria-labelledby="enterResult" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Match Results</h4>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal" role="form">
-            <div class="col-sm-6">
-              <h4>Hawthorn FC</h4>
-            <div class="form-group">
-              <label for="scoreTeam1Half1" class="col-lg-6 control-label">First Half</label>
-              <div class="col-lg-6">
-                <input type="number" class="form-control" id="scoreTeam1Half1" placeholder="0">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="scoreTeam1Half2" class="col-lg-6 control-label">Second Half</label>
-              <div class="col-lg-6">
-                <input type="number" class="form-control" id="scoreTeam1Half2" placeholder="0">
-              </div>
-            </div>
-          </div>
-            <div class="col-sm-6">
-              <h4>Kew FC</h4>
-              <div class="form-group">
-              <label for="scoreTeam2Half1" class="col-lg-6 control-label">First Half</label>
-              <div class="col-lg-6">
-                <input type="number" class="form-control" id="scoreTeam2Half1" placeholder="0">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="scoreTeam2Half2" class="col-lg-6 control-label">Second Half</label>
-              <div class="col-lg-6">
-                <input type="number" class="form-control" id="scoreTeam2Half2" placeholder="0">
-              </div>
-            </div>
-          </div>
-              <div class="form-group">
-                <label for="matchReport" class="control-label">Match Report</label>
-                <textarea class="form-control" id="matchReport" rows="3"></textarea>
-              </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
 
   <!-- JavaScript
   ================================================== -->

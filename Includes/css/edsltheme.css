@@ -34,6 +34,56 @@
  * Update the basics of our documents to prep for docs content.
  */
 
+/* stuff which i added (sam)*/
+table tr td a {
+    display:block;
+    height:100%;
+    width:100%;
+}
+
+ul{
+	list-style: none;
+}
+
+table{
+	width:90%;
+}
+
+tr{
+	min-width:30%;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.liOpen h5{
+	font-weight: bold;
+}
+
+.liOpen{
+	margin: 1em 0 1em 0;
+}
+
+.marginTop10{
+	margin-top: 10px;
+}
+
+.marginBottom10{
+	margin-bottom: 10px;
+}
+
+.margin10{
+	margin: 10px 10px 10px 10px;
+}
+
+.border1{
+	border:1px solid #dddddd;
+}
+
+.sitLeft{
+	padding: 0px;
+}
+
+/* end stuff which i added (still sam) */
+
 body {
   position: relative; /* For scrollyspy */
   padding-top: 50px; /* Account for fixed navbar */
